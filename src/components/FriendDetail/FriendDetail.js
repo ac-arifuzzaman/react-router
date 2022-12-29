@@ -8,7 +8,7 @@ const FriendDetail = () => {
         const url = `https://jsonplaceholder.typicode.com/users/${friendId}`
         fetch(url)
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setFriend(data))
     }, [])
     return (
         <div>
