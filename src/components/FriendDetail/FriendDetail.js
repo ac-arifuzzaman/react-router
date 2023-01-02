@@ -10,7 +10,7 @@ const FriendDetail = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setFriend(data));
-  }, []);
+  }, [friendId]);
   return (
     <div>
       <h1>hello form dosto er bari: {friendId}</h1>
